@@ -26,11 +26,11 @@ module.exports = {
       colors: {
         background: {
           DEFAULT: colors.white,
-          dark: colors.slate[900],
+          dark: "#121212",
         },
         primary: {
           DEFAULT: colors.gray[700],
-          dark: colors.gray[300],
+          dark: colors.gray[200],
         },
         secondary: {
           DEFAULT: colors.sky[400],
