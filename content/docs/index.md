@@ -4,7 +4,6 @@ showToc: false
 
 # Docs
 
-
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 items-start justify-items-center justify-center">
   <div class="max-w-sm bg-white dark:bg-neutral-800 overflow-hidden shadow-xl rounded-lg h-auto relative duration-500 hover:scale-105">
     <a href="/docs/series/flutter-tdd" class="no-underline">
