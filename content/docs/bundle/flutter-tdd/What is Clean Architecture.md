@@ -1,4 +1,6 @@
 ---
+title: What is Clean Architecture? 클린 아키텍처의 개념 및 정의
+description: Learn about Robert C. Martin's clean architecture and explore concepts and definitions. | Robert C. Martin의 클린 아키텍처에 대해 알아보고 개념과 정의 살펴봅니다.
 showToc: true
 ---
 
