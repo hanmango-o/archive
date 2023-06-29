@@ -1,11 +1,9 @@
 ---
-title: What is Clean Architecture? 클린 아키텍처의 개념 및 정의
+title: What is Clean Architecture?
 description: Learn about Robert C. Martin's clean architecture and explore concepts and definitions. | Robert C. Martin의 클린 아키텍처에 대해 알아보고 개념과 정의 살펴봅니다.
 image: ../../../assets/docs_flutter_tdd_intro.png
 showToc: true
 ---
-
-# What is Clean Architecture?
 
 좋은 아키텍쳐를 적용한 코드는 가독성을 높이고 코드의 재사용성을 높이는 등 프로젝트에 긍정적인 영향을 줍니다.
 
