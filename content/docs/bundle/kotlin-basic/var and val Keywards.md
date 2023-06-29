@@ -107,3 +107,9 @@ fun main() {
 ```
 
 ----
+**Summary :**
+- Kotlin의 변수 생성 방법에는 var(변경이 가능한 변수)와 val(변경이 불가능한 변수)가 있다.
+- 모든 변수는 initialized 되거나 type annotation을 명시해야 한다.
+
+**Links :**
+- https://www.udemy.com/course/kotling-android-jetpack-compose-/
