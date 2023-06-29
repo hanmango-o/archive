@@ -12,6 +12,8 @@ showToc: true
 
 - ### [[Types in Kotlin]]
 
+- ### [[Loops and Branching]]
+
 ----
 
 ## Chap02. Loops and Branching

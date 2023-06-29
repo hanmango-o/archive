@@ -6,7 +6,7 @@ showToc: true
 
 ----
 
-## Chap01. Architecture와 Flutter
+## Chap01. Clean Architecture와 Flutter
 
 - ### [[What is Clean Architecture]]
 
