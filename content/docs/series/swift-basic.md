@@ -8,6 +8,8 @@ showToc: true
 
 ## Chap01. 
 
+```
+
 상수 선언 키워드 let
 변수 선언 키워드 var
 
@@ -69,7 +71,7 @@ nil : 없음(null)
 
 컬렉션 타입
 Array : 순서가 있는 리스트 컬렉션
-var array : Array<Int> = Array<Int>()
+`var array : Array<Int> = Array<Int>()`
 var array : Array<Int> = [Int]()
 var array : [Int] = [Int]()
 var array : [Int] = []
@@ -82,13 +84,15 @@ removeLast() > 마지막 멤버 삭제
 removeAll() > 모두 삭제
 
 Dictionary : 키와 값의 쌍으로 이루어진 컬렉션
-var any : Dictionary<String, Any> = [String : Any]()
+
+`var any : Dictionary<String, Any> = [String : Any]()`
+
 var any : [String, Any] = [:]
 let .... // 변경 불가
 var any : [String, Any] = ["d" : "d"]
 
 Set : 순서가 없고, 멤버가 유일한 컬렉션
-var some = Set<Int> = Set<Int>() // 축약문 없음
+`var some = Set<Int> = Set<Int>() // 축약문 없음`
 some.insert(n) // n값 삽입
 contains(n)
 remove(n)
@@ -520,3 +524,4 @@ class 이름 : 부모클래스, 프로토콜들.... {
 
 
 
+```
