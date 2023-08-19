@@ -277,3 +277,77 @@ locations 속성을 이용하여 문자열의 배열로 XML 설정 파일을 명
 
 ## 단일 생성자의 묵시적 주입
 
+앞서 스프링에서 Setter 주입을 통한 DI를 살펴보았습니다. Setter 메서드를 생성하고 @Autowired 와 같은 어노테이션을 사용하여 스프링으로부터 필요한 객체를 주입합니다.
+
+DI의 다른 방식 중 하나는 생성자를 통한 주입입니다. 생성자 주입의 경우 객체 생성 시 의존성 주입이 필요하므로 보다 엄격하게 의존성 주입을 확인하는 장점이 있습니다.
+
+생성자를 통한 주입을 위해 생성자를 정의하고, @Autowired를 추가하여 생성자 주입이 가능합니다. 하지만 스프링 4.3 이후에는 묵시적으로 생성자 주입이 가능해졌습니다.
+
+```java
+package com.mango.sample;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Component
+@Data
+public class Example {
+	private Chef chef;
+
+	public Example(Chef chef) {
+		this.chef = chef;
+	}
+}
+```
+
+위 코드를 보면 생성자를 통해 Chef 객체를 주입받는 것을 알 수 있습니다. 이때, @Autowired 어노테이션이 없어도 묵시적으로 스프링이 Chef 객체를 주입해주는 것을 알 수 있습니다.
+
+
+### @AllArgsConstructor
+
+이러한 묵시적 주입을 Lombok과 결합하면 아래와 같습니다.
+
+```java
+package com.mango.sample;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+import lombok.AllArgsConstructor;
+
+@Component
+@Data
+@AllArgsConstructor
+public class Example {
+	private Chef chef;
+}
+```
+
+위 코드에서 @AllArgsConstructor 어노테이션은 인스턴스 변수로 선언된 모든 것을 파라미터로 받는 생성자를 작성해주는 어노테이션입니다.
+
+만약 특정한 필드에 대해서만 파라미터로 받는 생성자를 작성하고 싶다면 아래와 같이 @NonNull 과 @RequiredArgsConstructor 어노테이션을 활용할 수 있습니다.
+
+```java
+package com.mango.sample;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@Component
+@Data
+@RequiredArgsConstructor
+public class Example {
+
+	@NonNull
+	private Chef chef; // 주입됨
+
+	final private Restaurant restaurant; // 주입됨
+
+	private Manager manager; // 주입 안됨
+}
+```
+
+@NonNull 어노테이션이 붙은 필드나 final 필드에 대해서 파라미터로 받는 생성자를 만들어 냅니다.
