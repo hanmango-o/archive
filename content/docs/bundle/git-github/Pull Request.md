@@ -18,7 +18,7 @@
 2. 사용자는 new-branch를 로컬로 Fetch한 이후, 해당 브랜치에서 작업을 수행함
 3. 사용자는 PR 방식으로 new-branch의 결과물을 master 브랜치로 병합하고 싶어함
 
-먼저, 해당 상황에서 사용자는 자신이 로컬에서 작업한 new-branch의 내용을 원격 저장소(github)의 new-branch에 pull 해야 합니다.
+먼저, 해당 상황에서 사용자는 자신이 로컬에서 작업한 new-branch의 내용을 원격 저장소(github)의 new-branch에 push 해야 합니다.
 
 그러기 위해서는 아래의 명령어를 사용합니다.
 

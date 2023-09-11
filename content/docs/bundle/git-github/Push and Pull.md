@@ -23,7 +23,7 @@ git push <원격저장소 명> <브랜치 명>
 git push origin master
 ```
 
-만약 현재 로컬 환경에서 작업한 브랜치가 feature/new-func이고, 원격 저장소에도 new-branch 라는 이름의 브랜치에 해당 작업 내용을 푸쉬하고 싶다면 아래와 같이 사용합니다.
+만약 현재 로컬 환경에서 작업한 브랜치가 feature/new-func이고, 원격 저장소에도 feature/new-func 라는 이름의 브랜치에 해당 작업 내용을 푸쉬하고 싶다면 아래와 같이 사용합니다.
 
 ```
 git push origin feature/new-func
